@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {ApolloModule, APOLLO_OPTIONS} from 'apollo-angular';
 import {HttpLink} from 'apollo-angular/http';
 import {InMemoryCache} from '@apollo/client/core';
+import { HttpClientModule } from '@angular/common/http';
 
 const uri = 'https://api.spacex.land/graphql/'; // <-- add the URL of the GraphQL server here
 export function createApollo(httpLink: HttpLink) {
@@ -12,7 +13,7 @@ export function createApollo(httpLink: HttpLink) {
 }
 
 @NgModule({
-  exports: [ApolloModule],
+  exports: [ApolloModule, HttpClientModule],
   providers: [
     {
       provide: APOLLO_OPTIONS,

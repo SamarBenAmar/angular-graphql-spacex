@@ -8,6 +8,7 @@ import { LaunchDetailsComponent } from './launch-details/launch-details.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { RelativeTimePipe } from './relative-time/relative-time.pipe';
+import { GraphQLModule } from './graphql/graphql.module';
 
 
 @NgModule({
@@ -15,13 +16,14 @@ import { RelativeTimePipe } from './relative-time/relative-time.pipe';
     AppComponent,
     LaunchListComponent,
     LaunchDetailsComponent,
-    RelativeTimePipe
+    RelativeTimePipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    GraphQLModule
   ],
   providers: [],
   bootstrap: [AppComponent]
