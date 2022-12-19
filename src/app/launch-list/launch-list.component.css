@@ -2,10 +2,31 @@
     padding-top: 20px;
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(auto-fill, 350px);
+   
     justify-content: center;
   }
   
   .mat-card {
     cursor: pointer;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  thead th {
+    width: 25%;
+  }
+
+  thead {
+    background-color: #333;
+    color: white;
+    font-size: 0.875rem;
+	  text-transform: uppercase;
+	  letter-spacing: 2%;
   }
