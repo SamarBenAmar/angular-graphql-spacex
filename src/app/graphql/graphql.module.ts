@@ -4,7 +4,7 @@ import {HttpLink} from 'apollo-angular/http';
 import {InMemoryCache} from '@apollo/client/core';
 import { HttpClientModule } from '@angular/common/http';
 
-const uri = 'https://api.spacex.land/graphql/'; // <-- add the URL of the GraphQL server here
+const uri = 'https://api.spacex.land/graphql/'; 
 export function createApollo(httpLink: HttpLink) {
   return {
     link: httpLink.create({uri}),
